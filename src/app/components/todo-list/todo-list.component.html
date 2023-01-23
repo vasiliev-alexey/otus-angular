@@ -1,0 +1,9 @@
+<div class="app-card">
+  <app-todo-header></app-todo-header>
+  <app-todo-editor></app-todo-editor>
+  <ul>
+    <li *ngFor="let item of items" class="item">
+      <app-todo-item title="{{ item.title }}"> </app-todo-item>
+    </li>
+  </ul>
+</div>
