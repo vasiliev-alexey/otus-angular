@@ -13,19 +13,19 @@ export class TodoListComponent implements OnInit {
     this.items.push(
       {
         id: 1,
-        text: 'delectus aut autem',
+        text: 'Заготовка Angular проекта для приложения ToDo List',
       },
       {
         id: 2,
-        text: 'laboriosam mollitia et enim quasi adipisci quia provident illum',
+        text: ' Работа с компонентами: привязка логики к шаблону и выделение частей в отдельные компоненты',
       },
       {
         id: 3,
-        text: 'lorem20',
+        text: 'Добавляем анимацию загрузки (имитируем подгрузку данных с бекэнда). Используем shared модуль',
       },
       {
         id: 4,
-        text: 'delectus aut autem',
+        text: 'Список задач с описаниями, предпросмотр описания элемента списка. Всплывающие подсказки',
       }
     );
   }

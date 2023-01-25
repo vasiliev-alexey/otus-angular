@@ -1,4 +1,4 @@
-.editor {
+.add-card {
   display: flex;
 
   > input {
@@ -6,12 +6,12 @@
   }
 }
 
-.btn {
+.add-card_btn {
   width: 20%;
   background-color: slategray;
   opacity: 50%;
 }
 
-.active {
+.add-card_btn--active {
   opacity: 100%;
 }
