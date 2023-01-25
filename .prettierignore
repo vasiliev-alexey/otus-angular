@@ -1,4 +1,9 @@
 .angular/
-.vscode/
 .idea/
 node_modules
+src/assets
+angular.json
+package-lock.json
+
+
+*.ico

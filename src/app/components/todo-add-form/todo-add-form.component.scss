@@ -1,0 +1,17 @@
+.editor {
+  display: flex;
+
+  > input {
+    width: 80%;
+  }
+}
+
+.btn {
+  width: 20%;
+  background-color: slategray;
+  opacity: 50%;
+}
+
+.active {
+  opacity: 100%;
+}
