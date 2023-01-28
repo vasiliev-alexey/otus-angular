@@ -11,9 +11,34 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit(): void {
     this.items.push(
-      { title: 'task1', isCompete: false },
-      { title: 'task2', isCompete: false },
-      { title: 'task3', isCompete: false }
+      {
+        id: 1,
+        text: 'Заготовка Angular проекта для приложения ToDo List',
+      },
+      {
+        id: 2,
+        text: ' Работа с компонентами: привязка логики к шаблону и выделение частей в отдельные компоненты',
+      },
+      {
+        id: 3,
+        text: 'Добавляем анимацию загрузки (имитируем подгрузку данных с бекэнда). Используем shared модуль',
+      },
+      {
+        id: 4,
+        text: 'Список задач с описаниями, предпросмотр описания элемента списка. Всплывающие подсказки',
+      }
     );
+  }
+
+  onItemRemove(id: number) {
+    this.items = this.items.filter(todo => todo.id !== id);
+  }
+
+  onItemAdd(text: string) {
+    const id =
+      this.items.length === 0
+        ? 1
+        : this.items.reduce((prev, current) => (prev.id > current.id ? prev : current)).id + 1;
+    this.items = [{ text, id }, ...this.items];
   }
 }

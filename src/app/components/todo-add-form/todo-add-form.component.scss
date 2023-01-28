@@ -1,12 +1,17 @@
-.editor {
+.add-card {
   display: flex;
 
   > input {
     width: 80%;
   }
+}
 
-  > button {
-    width: 20%;
-    background-color: silver;
-  }
+.add-card_btn {
+  width: 20%;
+  background-color: slategray;
+  opacity: 50%;
+}
+
+.add-card_btn--active {
+  opacity: 100%;
 }

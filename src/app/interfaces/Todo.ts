@@ -1,4 +1,4 @@
 export interface Todo {
-  title: string;
-  isCompete: boolean;
+  text: string;
+  id: number;
 }
